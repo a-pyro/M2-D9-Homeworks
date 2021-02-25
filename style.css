@@ -22,7 +22,7 @@
   /* --fw-reg: 300; */
   /* --fw-bold: 900; */
 
-  --backdrop-color: rgba(255, 255, 255, 0.3);
+  --backdrop-color: rgba(0, 0, 0, 0.3);
 }
 
 html {
@@ -52,6 +52,25 @@ i:hover {
 i:active {
   transform: scale(0.9);
 }
+i.album__btn {
+  border-color: inherit;
+}
+.breadcrumb a {
+  color: #14bf50aa;
+}
+.breadcrumb a:hover {
+  color: #14bf50;
+}
+
+/* jumbotron */
+.jumbotron.jumbotron-fluid {
+  background: url('assets/img/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% 80%;
+  margin-left: -15px;
+  margin-right: -15px;
+}
 
 /* side menu */
 #sideMenu {
@@ -66,10 +85,12 @@ i:active {
 
 /* main */
 nav.navbar {
-  left: 13%;
+  padding-left: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .main__wrapper {
-  background-color: #303030;
+  background-color: #131313;
   width: 100%;
 }
 
@@ -107,6 +128,15 @@ i {
   text-align: center;
   line-height: 30px !important;
 }
+.album__card {
+  background-color: #191919;
+}
+.album__card:hover {
+  background-color: #282828;
+}
+.album__title {
+  font-size: 0.7rem;
+}
 
 .card-title {
   white-space: nowrap;
@@ -121,19 +151,16 @@ i {
   transition: 0.1s;
   cursor: pointer;
 }
-.card:hover {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
 
 p {
   font-size: 0.6rem;
 }
 
-@media (max-width: 768px) {
-  #main > nav > div.dropdown.show > div {
-    left: unset !important;
-    right: 0 !important;
+@media (max-width: 992px) {
+  .dropdown-menu {
+    left: -600%;
   }
+
   .dropdown-toggle::after {
     display: none;
   }

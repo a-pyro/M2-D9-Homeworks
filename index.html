@@ -37,324 +37,896 @@
   </head>
   <body class="animate__animated animate__fadeIn">
     <div class="container-fluid px-0">
-
-    <div class="wrapper d-flex">
+      <div class="wrapper d-flex">
         <!-- side menu -->
-        <aside class="side__menu" id="sideMenu">
-        </aside>
-  
-  
-       <div class="main__wrapper">
+        <aside class="side__menu" id="sideMenu"></aside>
+
+        <div class="main__wrapper pb-5">
           <div class="container-fluid">
             <!-- nav -->
-             <nav class="navbar navbar-light bg-transparent justify-content-between pl-0 sticky-top">
+            <nav
+              class="navbar navbar-light bg-transparent justify-content-between pl-0 sticky-top"
+            >
               <!-- immagine utente -->
               <div class="prev-next-btns mr-auto">
-                <a href="#" class="mr-2"></a><i class="fas fa-chevron-left rounded-circle "></i></a>
-                <a href="#" ></a><i class="fas fa-chevron-right rounded-circle"></i></a>
+                <a href="#" class="mr-2">
+                  <i class="fas fa-chevron-left rounded-circle"></i>
+                </a>
+                <a href="#">
+                  <i class="fas fa-chevron-right rounded-circle"></i>
+                </a>
               </div>
               <div class="dropdown">
                 <button
-                  class="btn btn-secondary dropdown-toggle dropleft rounded-pill p-0 pr-3"
+                  class="btn btn-secondary dropdown-toggle dropleft rounded-pill p-0 pr-lg-3"
                   type="button"
                   id="userMenu"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <img id="userImg" class="rounded-circle mr-3" src="https://i.scdn.co/image/ab6775700000ee85822c8e43c2b458715575b1f2"></img>
-                  <span id="userName" class="d-none d-md-inline-block">Ardi Germenji</span>
+                  <img
+                    id="userImg"
+                    class="rounded-circle mr-lg-3"
+                    src="https://i.scdn.co/image/ab6775700000ee85822c8e43c2b458715575b1f2"
+                  />
+                  <span id="userName" class="d-none d-lg-inline-block"
+                    >Ardi Germenji</span
+                  >
                 </button>
                 <div class="dropdown-menu bg-dark" aria-labelledby="userMenu">
                   <a class="dropdown-item text-white" href="#">Action</a>
-                  <a class="dropdown-item text-white" href="#">Another action</a>
-                  <a class="dropdown-item text-white" href="#">Something else here</a>
+                  <a class="dropdown-item text-white" href="#"
+                    >Another action</a
+                  >
+                  <a class="dropdown-item text-white" href="#"
+                    >Something else here</a
+                  >
                 </div>
               </div>
             </nav>
+
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb" class="mt-3">
+              <ol class="breadcrumb bg-transparent">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+
+            <!-- jumbotron -->
+            <div class="jumbotron jumbotron-fluid">
+              <div class="container">
+                <h1 class="display-4">Where music meet Passion</h1>
+              </div>
+            </div>
             <!-- albums shocase -->
             <main id="mainRow" class="row">
               <div class="col-12" class="main__showcase">
                 <!-- each row is a category -->
                 <section class="row__category">
                   <h5 class="font-weight-bold">Ascoltati di recente</h5>
-                  <div class="row">
-                    <div class="col-12 col-md-4 col-lg-2 mb-2">
-                      <div class="card bg-dark p-2 album__card">
-                      <div class="album__cover">
-                        <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                        <i class="fas fa-play-circle fa-2x album__btn"></i>
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100 mr-0">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
                       </div>
-                      <div class="card-body p-0 mt-2">
-                        <h6 class="card-title album__title">Green day</h6>
-                        <p class="card-text album__text">Bla bla bla</p>
-                      </div>
-    
                     </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="row__category">
+                  <h5 class="font-weight-bold">Ascoltati di recente</h5>
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100 mr-0">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="row__category">
+                  <h5 class="font-weight-bold">Ascoltati di recente</h5>
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100 mr-0">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="row__category">
+                  <h5 class="font-weight-bold">Ascoltati di recente</h5>
+                  <div class="row no-gutters">
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100 mr-0">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2 col-xl-1 mb-2 mr-2">
+                      <div class="card p-2 album__card w-100">
+                        <div class="album__cover">
+                          <img
+                            src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d"
+                            class="card-img-top shadow"
+                            alt="..."
+                          />
+                          <i
+                            class="fas fa-play-circle album__btn rounded-circle"
+                          ></i>
+                        </div>
+                        <div class="card-body p-0 mt-2">
+                          <h6 class="card-title album__title">Green day</h6>
+                          <p class="card-text album__text">Bla bla bla</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </section>
               </div>
             </main>
           </div>
-       </div>
+        </div>
+      </div>
     </div>
 
-         <!-- now playing -->
-    <footer class="music-player" id="player">
+    <!-- now playing -->
+    <footer class="music-player" id="player"></footer>
 
-    </footer>
-
-
-      
-
-
-        <!-- main menu -->
-
-        
-        <!-- navbar -->
-       
-        <!-- pagina principale -->
-        <!-- <div class="row main__showcase" id="main">
-          <section class="col-12 ascoltati-recente">
-            
-            <div class="row">
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="col-12 mt-2 crescita-personale">
-            <h5 class="font-weight-bold">Crescita personale</h5>
-            <div class="row">
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="col-12 mt-2 il-meglio-artisti">
-            <h5 class="font-weight-bold">Il meglio degli Artisti</h5>
-            <div class="row">
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="col-12 mt-2 another-random-section">
-            <h5 class="font-weight-bold">Another random section</h5>
-            <div class="row">
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-4 col-lg-2 mb-2">
-                <div class="card bg-dark p-2">
-                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                  <div class="card-body p-0 mt-2">
-                    <h6 class="card-title">Green day</h6>
-                    <p class="card-text">Bla bla bla</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-      </main> -->
-
-        
-    
-
-
-   
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
