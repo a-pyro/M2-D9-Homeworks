@@ -1,0 +1,124 @@
+/* g fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&display=swap'); */
+/* fonts */
+:root {
+  /* font family */
+  /* --ffamily-primary: 'Work Sans', sans-serif; */
+  /* --ffamily-primary: 'Poppins', sans-serif; */
+  /* --ffamily-primary: 'Roboto', sans-serif; */
+  --ffamily-primary: 'Open Sans', sans-serif;
+
+  --ffamily-secondary: 'Source Code Pro', monospace;
+}
+:root {
+  --clr-dark: #303030;
+  --clr-light: #f8f8f8;
+
+  /* --fs-body: 1rem; */
+  /* --fw-reg: 300; */
+  /* --fw-bold: 900; */
+
+  --backdrop-color: rgba(255, 255, 255, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::backdrop {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-light);
+  font-family: var(--ff-primary);
+  /* font-size: var(--fs-body); */
+  /* line-height: 1.6; */
+}
+
+.backdrop-blur {
+  background-color: var(--backdrop-color);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+#userImg {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: -1px;
+}
+
+#sideMenu,
+#userMenu {
+  background: #000;
+}
+
+#main {
+  background: var(--clr-dark);
+}
+
+i {
+  color: grey;
+  font-weight: lighter;
+  background: #000;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px !important;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-text {
+  color: gray;
+}
+
+.card {
+  transition: 0.1s;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+#player {
+  height: 10vh;
+  background: rgb(24, 24, 24);
+  position: fixed;
+  bottom: 0;
+}
+
+p {
+  font-size: 0.6rem;
+}
+#sideMenu {
+  flex: unset;
+  width: 9rem;
+  max-width: unset;
+}
+#main {
+  flex: unset;
+  width: calc(100vw - 180px);
+}
+
+@media (max-width: 768px) {
+  #main > nav > div.dropdown.show > div {
+    left: unset !important;
+    right: 0 !important;
+  }
+
+  .card {
+    width: 350px !important;
+  }
+}
