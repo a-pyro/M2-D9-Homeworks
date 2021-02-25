@@ -109,7 +109,9 @@ nav.navbar {
   position: relative;
   top: -1px;
 }
-
+/* ROWS */
+.row.flex-nowrap {
+}
 /* albums */
 .album__cover {
   position: relative;
@@ -183,9 +185,5 @@ p {
 
   .dropdown-toggle::after {
     display: none;
-  }
-
-  .card {
-    width: 350px !important;
   }
 }

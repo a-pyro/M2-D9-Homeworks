@@ -120,6 +120,7 @@ const player = {
     durations: [...durationsShop],
     artist: artistsShop[idx],
     genre: genresShop[idx % genresShop.length],
+    title: [...Array(14)].map((_, idx) => `Title-${idx + 1}`),
   })),
   makeFav() {
     this.favAlbums = this.albums.slice(0, 10);
@@ -128,7 +129,7 @@ const player = {
     this.mostPopular = this.albums.slice(20, this.albums.length);
   },
   addRecent() {
-    this.recentlyAdded = this.albums.slice(10, 21);
+    this.recentlyAdded = this.albums.slice(10, 20);
   },
 };
 
@@ -137,36 +138,81 @@ player.makePopular();
 player.addRecent();
 
 console.log(player);
-// const albums = [...Array(30)].map((album, idx) => ({
-//   albumCover: covers[idx],
-//   albumGenre: genres[idx % genres.length],
 
-// }))
+const mainShowCase = document.querySelector('.main__showcase');
 
-// const album = {
-//   cover: 'url',
-//   tracklist: [],
-//   duration: [...],
-//   rrating: '8/10',
-//   artist: 'string'
+for (let i = 1; i <= 3; i++) {
+  const html = `
+    <section class='row__category'>
+      <h5 class='font-weight-bold ml-2 row__heading-${i}'></h5>
+      <div class='row flex-nowrap no-gutters' id="row${i}">
+      </div>
+    </section>
+    `;
+  mainShowCase.insertAdjacentHTML('beforeend', html);
+}
 
-// }
-// const me = {
-//   albums: [{},{}...],
-//   favAlbums: [{}, {}],
-//   recentlyAdded: [...]
-//   antohercagete:
-// }
+const fillCol = (arr, rowID, headingNumber, heading) => {
+  const rowDom = document.getElementById(rowID);
+  arr.forEach((album, idx) => {
+    const html = `
+      <div class='col mr-2 mb-2 card__col'>
+          <div class='card p-2 shadow album__card'>
+            <div class='card__cover__wrapper'>
+              <img src='${album.cover}' class='card-img-top album__cover w-100' alt='...' />
+              <i class='fas fa-play-circle album__btn rounded-circle'></i>
+            </div>
+            <div class='card-body p-0 mt-2'>
+              <h6 class='card-title album__artist'>${album.artist}</h6>
+              <p class='card-text album__text'>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+    `;
 
-const cardsTitles = document.querySelectorAll('.card-title');
-cardsTitles.forEach((title) => (title.innerText = 'random album'));
+    rowDom.insertAdjacentHTML('beforeend', html);
+    const rowHeading = document.querySelector(`.row__heading-${headingNumber}`);
+    rowHeading.textContent = heading;
+  });
+};
+
+fillCol(player.recentlyAdded, 'row1', 1, 'Recently Added');
+fillCol(player.mostPopular, 'row2', 2, 'Most Popular');
+fillCol(player.favAlbums, 'row3', 3, 'Favourites Albums');
+// favAlbums
+// mostPopular
+// recentlyAdded
+
+// player.favAlbums.forEach((album, idx) => {
+//   const
+// })
+
+/*  */
+
+{
+  /* <section class='row__category'>
+  <h5 class='font-weight-bold row__heading'></h5>
+  <div class='row no-gutters'>
+    <div class='col mr-2 mb-2 card__col'>
+      <div class='card p-2 shadow album__card'>
+        <div class='card__cover__wrapper'>
+          <img src='' class='card-img-top album__cover w-100' alt='...' />
+          <i class='fas fa-play-circle album__btn rounded-circle'></i>
+        </div>
+        <div class='card-body p-0 mt-2'>
+          <h6 class='card-title album__artist'></h6>
+          <p class='card-text album__text'>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>; */
+}
 
 //  EXERCISE 3 Foreach album in the favorite list, place the genre inside a badge
 // <span class="badge badge-pill badge-primary">Primary</span>
 
-const coversDOM = document.querySelectorAll('.album__cover');
-
 coversDOM.forEach((albumCover) => {
-  const badge = `<span class="badge badge-pill badge-primary album__genere">Rock</span>`;
+  const badge = `<span class="badge badge-pill badge-primary album__genere"></span>`;
   albumCover.innerHTML += badge;
 });
