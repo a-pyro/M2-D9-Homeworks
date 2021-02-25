@@ -3,8 +3,32 @@ const shit = '💩',
   fire = '🔥',
   rocket = '🚀',
   poudzo = '👍🏻';
+// scoll navbar
+const nav = document.querySelector('nav.navbar');
+window.addEventListener('scroll', showNav);
+function showNav() {
+  console.log(pageYOffset);
+  if (pageYOffset > 130) {
+    if (nav.classList.contains('backdrop-blur')) return;
+    nav.style.transform = 'translateY(-200px)';
+    setTimeout(() => {
+      nav.classList.remove('bg-transparent');
+      nav.classList.add('backdrop-blur');
+      nav.style.transform = 'translateY(0)';
+    }, 100);
+  }
 
-const albums = [
+  if (pageYOffset === 0) {
+    nav.style.transform = 'translateY(-200px)';
+    setTimeout(() => {
+      nav.style.transform = 'translateY(0)';
+      nav.classList.add('bg-transparent');
+      nav.classList.remove('backdrop-blur');
+    }, 100);
+  }
+}
+
+const coversFetched = [
   'https://i.scdn.co/image/ab6775700000ee85822c8e43c2b458715575b1f2',
   'https://i.scdn.co/image/ab67616d00004851ce85d297fc24805972bd8df1',
   'https://i.scdn.co/image/ab67706c0000bebbc91e4c3c759916efdd7e7f83',
@@ -70,49 +94,79 @@ const albums = [
   'https://i.scdn.co/image/ab67616d00004851ce85d297fc24805972bd8df1',
 ];
 
-const cardsImgs = document.querySelectorAll('.card-img-top');
-cardsImgs.forEach((img, idx) => {
-  img.src = albums[Math.floor(Math.random() * albums.length)];
-  setTimeout(() => {
-    img
-      .closest('.card')
-      .classList.add('animate__animated', 'animate__fadeInUp');
-  }, (idx + 1 * 15) * 5 ** 2);
-});
+const genresShop = [
+  'rock',
+  'classical',
+  'hip-hop',
+  'techno',
+  'pop',
+  'country',
+  'blues',
+  'jazz',
+  'dance',
+];
+const artistsShop = [...Array(30)].map((_, idx) => `Artist n°${idx + 1}`);
+const trackListsShop = [...Array(14)].map((_, idx) => `Track n°${idx + 1}`);
+const durationsShop = [...Array(14)].map(
+  (_, idx) =>
+    `${((idx + 1 * (Math.random() * (10000 - 5000)) + 5000) / 60).toFixed(2)}s`
+);
+const coversShop = coversFetched.slice(0, 30);
+
+const player = {
+  albums: [...Array(30)].map((element, idx) => ({
+    cover: coversShop[idx],
+    trackList: [...trackListsShop],
+    durations: [...durationsShop],
+    artist: artistsShop[idx],
+    genre: genresShop[idx % genresShop.length],
+  })),
+  makeFav() {
+    this.favAlbums = this.albums.slice(0, 10);
+  },
+  makePopular() {
+    this.mostPopular = this.albums.slice(20, this.albums.length);
+  },
+  addRecent() {
+    this.recentlyAdded = this.albums.slice(10, 21);
+  },
+};
+
+player.makeFav();
+player.makePopular();
+player.addRecent();
+
+console.log(player);
+// const albums = [...Array(30)].map((album, idx) => ({
+//   albumCover: covers[idx],
+//   albumGenre: genres[idx % genres.length],
+
+// }))
+
+// const album = {
+//   cover: 'url',
+//   tracklist: [],
+//   duration: [...],
+//   rrating: '8/10',
+//   artist: 'string'
+
+// }
+// const me = {
+//   albums: [{},{}...],
+//   favAlbums: [{}, {}],
+//   recentlyAdded: [...]
+//   antohercagete:
+// }
+
 const cardsTitles = document.querySelectorAll('.card-title');
 cardsTitles.forEach((title) => (title.innerText = 'random album'));
-
-// scoll navbar
-const nav = document.querySelector('nav.navbar');
-window.addEventListener('scroll', showNav);
-function showNav() {
-  console.log(pageYOffset);
-  if (pageYOffset > 130) {
-    if (nav.classList.contains('backdrop-blur')) return;
-    nav.style.transform = 'translateY(-200px)';
-    setTimeout(() => {
-      nav.classList.remove('bg-transparent');
-      nav.classList.add('backdrop-blur');
-      nav.style.transform = 'translateY(0)';
-    }, 100);
-  }
-
-  if (pageYOffset === 0) {
-    nav.style.transform = 'translateY(-200px)';
-    setTimeout(() => {
-      nav.style.transform = 'translateY(0)';
-      nav.classList.add('bg-transparent');
-      nav.classList.remove('backdrop-blur');
-    }, 100);
-  }
-}
 
 //  EXERCISE 3 Foreach album in the favorite list, place the genre inside a badge
 // <span class="badge badge-pill badge-primary">Primary</span>
 
-const covers = document.querySelectorAll('.album__cover');
-console.log(covers);
-covers.forEach((albumCover) => {
-  const badge = `<span class="badge badge-pill badge-primary album__genere">Genere</span>`;
+const coversDOM = document.querySelectorAll('.album__cover');
+
+coversDOM.forEach((albumCover) => {
+  const badge = `<span class="badge badge-pill badge-primary album__genere">Rock</span>`;
   albumCover.innerHTML += badge;
 });

@@ -55,6 +55,14 @@ i:active {
 i.album__btn {
   border-color: inherit;
 }
+
+/* nav and header */
+.dropdown-menu {
+  background-color: #191919 !important;
+}
+.dropdown-item:hover {
+  background-color: #14bf509f;
+}
 .breadcrumb a {
   color: #14bf50aa;
 }
@@ -70,6 +78,7 @@ i.album__btn {
   background-position: 80% 80%;
   margin-left: -15px;
   margin-right: -15px;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.638);
 }
 
 /* side menu */
@@ -105,10 +114,11 @@ nav.navbar {
 .album__cover {
   position: relative;
 }
-.album__cover .album__genere {
+.album__cover .badge.album__genere {
   background: #14bf50;
   position: absolute;
-  bottom: 0;
+  bottom: 12%;
+  right: 3%;
 }
 
 /* footer - player */
