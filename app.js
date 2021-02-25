@@ -105,6 +105,8 @@ const genresShop = [
   'jazz',
   'dance',
 ];
+
+// const mapGenreCol = genresShop.map();
 const artistsShop = [...Array(30)].map((_, idx) => `Artist n°${idx + 1}`);
 const trackListsShop = [...Array(14)].map((_, idx) => `Track n°${idx + 1}`);
 const durationsShop = [...Array(14)].map(
@@ -143,7 +145,7 @@ const mainShowCase = document.querySelector('.main__showcase');
 
 for (let i = 1; i <= 3; i++) {
   const html = `
-    <section class='row__category'>
+    <section class='row__category mb-4'>
       <h5 class='font-weight-bold ml-2 row__heading-${i}'></h5>
       <div class='row flex-nowrap no-gutters' id="row${i}">
       </div>
@@ -159,8 +161,9 @@ const fillCol = (arr, rowID, headingNumber, heading) => {
       <div class='col mr-2 mb-2 card__col'>
           <div class='card p-2 shadow album__card'>
             <div class='card__cover__wrapper'>
-              <img src='${album.cover}' class='card-img-top album__cover w-100' alt='...' />
+              <img src='${album.cover}' class='card-img-top rounded-0 album__cover w-100' alt='...' />
               <i class='fas fa-play-circle album__btn rounded-circle'></i>
+              <span class="badge badge-pill shadow-lg album__genere">${album.genre}</span>
             </div>
             <div class='card-body p-0 mt-2'>
               <h6 class='card-title album__artist'>${album.artist}</h6>
@@ -211,8 +214,8 @@ fillCol(player.favAlbums, 'row3', 3, 'Favourites Albums');
 
 //  EXERCISE 3 Foreach album in the favorite list, place the genre inside a badge
 // <span class="badge badge-pill badge-primary">Primary</span>
-
-coversDOM.forEach((albumCover) => {
-  const badge = `<span class="badge badge-pill badge-primary album__genere"></span>`;
-  albumCover.innerHTML += badge;
+const cardCoverWrapper = document.querySelectorAll('.card__cover__wrapper');
+cardCoverWrapper.forEach((wrapper) => {
+  const badge = ``;
+  wrapper.innerHTML += badge;
 });

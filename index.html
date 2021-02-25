@@ -45,10 +45,10 @@
           <div class="container-fluid">
             <!-- nav -->
             <nav
-              class="navbar navbar-light bg-transparent justify-content-between pl-0 sticky-top"
+              class="navbar navbar-light bg-transparent justify-content-between sticky-top"
             >
               <!-- immagine utente -->
-              <div class="prev-next-btns mr-auto">
+              <div class="prev-next-btns">
                 <a href="#" class="mr-2">
                   <i class="fas fa-chevron-left rounded-circle"></i>
                 </a>
@@ -56,6 +56,15 @@
                   <i class="fas fa-chevron-right rounded-circle"></i>
                 </a>
               </div>
+              <ol class="breadcrumb bg-transparent mb-0">
+                <li class="breadcrumb-item">
+                  <a href="#" class="d-inline-block">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="d-inline-block">Library</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
               <div class="dropdown">
                 <button
                   class="btn btn-secondary dropdown-toggle dropleft rounded-pill p-0 pr-lg-3"
@@ -86,15 +95,6 @@
               </div>
             </nav>
 
-            <!-- breadcrumb -->
-            <nav aria-label="breadcrumb" class="mt-3">
-              <ol class="breadcrumb bg-transparent">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
-              </ol>
-            </nav>
-
             <!-- jumbotron -->
             <div class="jumbotron jumbotron-fluid">
               <div class="container">
@@ -104,32 +104,7 @@
 
             <!-- albums shocase -->
 
-            <main class="main__showcase">
-              <!-- each row is a category -->
-              <!--  <section class="row__category">
-                <h5 class="font-weight-bold row__heading"></h5>
-                <div class="row no-gutters">
-                  <div class="col mr-2 mb-2 card__col">
-                    <div class="card p-2 shadow album__card">
-                      <div class="card__cover__wrapper">
-                        <img
-                          src=""
-                          class="card-img-top album__cover w-100"
-                          alt="..."
-                        />
-                        <i
-                          class="fas fa-play-circle album__btn rounded-circle"
-                        ></i>
-                      </div>
-                      <div class="card-body p-0 mt-2">
-                        <h6 class="card-title album__artist"></h6>
-                        <p class="card-text album__text">Lorem ipsum dolor sit amet.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section> -->
-            </main>
+            <main class="main__showcase"></main>
           </div>
         </div>
       </div>

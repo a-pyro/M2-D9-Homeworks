@@ -34,6 +34,7 @@ body {
   font-family: var(--ff-primary);
   /* font-size: var(--fs-body); */
   /* line-height: 1.6; */
+  background-color: #131313;
 }
 
 .backdrop-blur {
@@ -64,10 +65,13 @@ i.album__btn {
   background-color: #14bf509f;
 }
 .breadcrumb a {
-  color: #14bf50aa;
+  color: #14bf50;
+  font-weight: bold;
+  transition: all 0.2s;
 }
 .breadcrumb a:hover {
-  color: #14bf50;
+  text-decoration: none;
+  text-shadow: 1px 2px 21px #07993a;
 }
 
 /* jumbotron */
@@ -99,8 +103,11 @@ nav.navbar {
   margin-right: -15px;
 }
 .main__wrapper {
-  background-color: #131313;
   width: 100%;
+}
+
+#userMenu {
+  background-color: #000;
 }
 
 #userImg {
@@ -116,11 +123,12 @@ nav.navbar {
 .album__cover {
   position: relative;
 }
-.album__cover .badge.album__genere {
-  background: #14bf50;
+.album__genere {
+  background: #07993a;
   position: absolute;
-  bottom: 12%;
-  right: 3%;
+
+  top: 0;
+  left: 0;
 }
 
 /* footer - player */
@@ -131,10 +139,6 @@ nav.navbar {
   bottom: 0;
   left: 0;
   right: 0;
-}
-
-#userMenu {
-  background: #000;
 }
 
 #main {
