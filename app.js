@@ -106,3 +106,13 @@ function showNav() {
     }, 100);
   }
 }
+
+//  EXERCISE 3 Foreach album in the favorite list, place the genre inside a badge
+// <span class="badge badge-pill badge-primary">Primary</span>
+
+const covers = document.querySelectorAll('.album__cover');
+console.log(covers);
+covers.forEach((albumCover) => {
+  const badge = `<span class="badge badge-pill badge-primary album__genere">Genere</span>`;
+  albumCover.innerHTML += badge;
+});

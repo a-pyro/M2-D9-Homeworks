@@ -101,6 +101,16 @@ nav.navbar {
   top: -1px;
 }
 
+/* albums */
+.album__cover {
+  position: relative;
+}
+.album__cover .album__genere {
+  background: #14bf50;
+  position: absolute;
+  bottom: 0;
+}
+
 /* footer - player */
 #player {
   height: 10vh;
