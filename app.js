@@ -128,7 +128,7 @@ const player = {
     this.favAlbums = this.albums.slice(0, 10);
   },
   makePopular() {
-    this.mostPopular = this.albums.slice(20, this.albums.length);
+    this.mostPopular = this.albums.slice(20, 30);
   },
   addRecent() {
     this.recentlyAdded = this.albums.slice(10, 20);
@@ -147,7 +147,7 @@ for (let i = 1; i <= 3; i++) {
   const html = `
     <section class='row__category mb-4'>
       <h5 class='font-weight-bold ml-2 row__heading-${i}'></h5>
-      <div class='row flex-nowrap no-gutters' id="row${i}">
+      <div class='row no-gutters' id="row${i}">
       </div>
     </section>
     `;
@@ -161,7 +161,7 @@ const fillCol = (arr, rowID, headingNumber, heading) => {
       <div class='col mr-2 mb-2 card__col'>
           <div class='card p-2 shadow album__card'>
             <div class='card__cover__wrapper'>
-              <img src='${album.cover}' class='card-img-top rounded-0 album__cover w-100' alt='...' />
+              <img src='${album.cover}' class='card-img-top rounded-0 album__cover' alt='...' />
               <i class='fas fa-play-circle album__btn rounded-circle'></i>
               <span class="badge badge-pill shadow-lg album__genere">${album.genre}</span>
             </div>
@@ -182,6 +182,23 @@ const fillCol = (arr, rowID, headingNumber, heading) => {
 fillCol(player.recentlyAdded, 'row1', 1, 'Recently Added');
 fillCol(player.mostPopular, 'row2', 2, 'Most Popular');
 fillCol(player.favAlbums, 'row3', 3, 'Favourites Albums');
+
+const tbody = document.querySelector('tbody');
+const { favAlbums } = player;
+const { trackList, durations, title } = favAlbums[0];
+trackList.forEach((track, idx) => {
+  const html = `
+                <tr>
+                  <th scope="row">${track}</th>
+                  <td>${title[idx]}</td>
+                  <td class="d-flex justify-content-between">${durations[idx]}<button type="button" class="btn ml-auto btn-outline-light custom-outline-btn rounded-pill mr-3">Delete</button></td>
+                </tr>
+  `;
+  tbody.innerHTML += html;
+});
+// player.favAlbums[0].trackList.forEach(track => {
+
+// })
 // favAlbums
 // mostPopular
 // recentlyAdded

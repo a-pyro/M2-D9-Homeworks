@@ -182,6 +182,17 @@ p {
   font-size: 0.6rem;
 }
 
+/* table ex 6 */
+.custom-outline-btn {
+  border-color: #14bf50;
+}
+.custom-outline-btn.btn-outline-light.rounded-pill:hover,
+.custom-outline-btn.btn-outline-light.rounded-pill:active {
+  background-color: #191919;
+  color: #14bf50;
+  border-color: #191919;
+}
+
 @media (max-width: 992px) {
   .dropdown-menu {
     left: -600%;
