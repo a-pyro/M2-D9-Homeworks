@@ -36,290 +36,325 @@
     <title>Musiccccc</title>
   </head>
   <body class="animate__animated animate__fadeIn">
-    <div class="container-fluid">
-      <div class="row">
-        <!-- menu laterale -->
-        <aside class="col-2 side-menu" id="sideMenu">
-          <p></p>
+    <div class="container-fluid px-0">
+
+    <div class="wrapper d-flex">
+        <!-- side menu -->
+        <aside class="side__menu" id="sideMenu">
         </aside>
-
-        <!-- pagina principale -->
-        <main class="col-10 main-showcase" id="main">
-          <nav class="navbar navbar-light bg-transparent justify-content-between pl-0 sticky-top">
-            <!-- immagine utente -->
-            <div class="prev-next-btns mr-auto">
-              <a href="#" class="mr-2"></a><i class="fas fa-chevron-left rounded-circle "></i></a>
-              <a href="#" ></a><i class="fas fa-chevron-right rounded-circle"></i></a>
-            </div>
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary dropdown-toggle dropleft rounded-pill p-0 pr-3"
-                type="button"
-                id="userMenu"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img id="userImg" class="rounded-circle mr-3" src="https://i.scdn.co/image/ab6775700000ee85822c8e43c2b458715575b1f2"></img>
-                <span id="userName" class="d-none d-md-inline-block">Ardi Germenji</span>
-              </button>
-              <div class="dropdown-menu bg-dark" aria-labelledby="userMenu">
-                <a class="dropdown-item text-white" href="#">Action</a>
-                <a class="dropdown-item text-white" href="#">Another action</a>
-                <a class="dropdown-item text-white" href="#">Something else here</a>
+  
+  
+       <div class="main__wrapper">
+          <div class="container-fluid">
+            <!-- nav -->
+             <nav class="navbar navbar-light bg-transparent justify-content-between pl-0 sticky-top">
+              <!-- immagine utente -->
+              <div class="prev-next-btns mr-auto">
+                <a href="#" class="mr-2"></a><i class="fas fa-chevron-left rounded-circle "></i></a>
+                <a href="#" ></a><i class="fas fa-chevron-right rounded-circle"></i></a>
               </div>
-            </div>
-          </nav>
-
-          <section class="my-2">
-
-            <section class="ascoltati-recente">
-              <h5 class="font-weight-bold">Ascoltati di recente</h5>
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <div>
-                      <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-
-                    </div>
-
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle dropleft rounded-pill p-0 pr-3"
+                  type="button"
+                  id="userMenu"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img id="userImg" class="rounded-circle mr-3" src="https://i.scdn.co/image/ab6775700000ee85822c8e43c2b458715575b1f2"></img>
+                  <span id="userName" class="d-none d-md-inline-block">Ardi Germenji</span>
+                </button>
+                <div class="dropdown-menu bg-dark" aria-labelledby="userMenu">
+                  <a class="dropdown-item text-white" href="#">Action</a>
+                  <a class="dropdown-item text-white" href="#">Another action</a>
+                  <a class="dropdown-item text-white" href="#">Something else here</a>
                 </div>
               </div>
-            </section>
-            <section class="mt-2 crescita-personale">
-              <h5 class="font-weight-bold">Crescita personale</h5>
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
+            </nav>
+            <!-- albums shocase -->
+            <main id="mainRow" class="row">
+              <div class="col-12" class="main__showcase">
+                <!-- each row is a category -->
+                <section class="row__category">
+                  <h5 class="font-weight-bold">Ascoltati di recente</h5>
+                  <div class="row">
+                    <div class="col-12 col-md-4 col-lg-2 mb-2">
+                      <div class="card bg-dark p-2 album__card">
+                      <div class="album__cover">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                        <i class="fas fa-play-circle fa-2x album__btn"></i>
+                      </div>
+                      <div class="card-body p-0 mt-2">
+                        <h6 class="card-title album__title">Green day</h6>
+                        <p class="card-text album__text">Bla bla bla</p>
+                      </div>
+    
+                    </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
+                </section>
               </div>
-            </section>
-            <section class="mt-2 il-meglio-artisti">
-              <h5 class="font-weight-bold">Il meglio degli Artisti</h5>
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="mt-2 another-random-section">
-              <h5 class="font-weight-bold">Another random section</h5>
-              <div class="row">
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-2 mb-2">
-                  <div class="card bg-dark p-2">
-                    <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
-                    <div class="card-body p-0 mt-2">
-                      <h6 class="card-title">Green day</h6>
-                      <p class="card-text">Bla bla bla</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </section>
-        </main>
-
-        <!-- now playing -->
-        <footer class="col-12 music-player" id="player"></footer>
-      </div>
+            </main>
+          </div>
+       </div>
     </div>
+
+         <!-- now playing -->
+    <footer class="music-player" id="player">
+
+    </footer>
+
+
+      
+
+
+        <!-- main menu -->
+
+        
+        <!-- navbar -->
+       
+        <!-- pagina principale -->
+        <!-- <div class="row main__showcase" id="main">
+          <section class="col-12 ascoltati-recente">
+            
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col-12 mt-2 crescita-personale">
+            <h5 class="font-weight-bold">Crescita personale</h5>
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col-12 mt-2 il-meglio-artisti">
+            <h5 class="font-weight-bold">Il meglio degli Artisti</h5>
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col-12 mt-2 another-random-section">
+            <h5 class="font-weight-bold">Another random section</h5>
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-2 mb-2">
+                <div class="card bg-dark p-2">
+                  <img src="https://i.scdn.co/image/ab67616d0000b273db89b08034de626ebee6823d" class="card-img-top shadow" alt="...">
+                  <div class="card-body p-0 mt-2">
+                    <h6 class="card-title">Green day</h6>
+                    <p class="card-text">Bla bla bla</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </main> -->
+
+        
+    
+
+
+   
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

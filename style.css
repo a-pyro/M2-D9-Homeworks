@@ -29,14 +29,7 @@ html {
   scroll-behavior: smooth;
 }
 
-*,
-*::after,
-*::backdrop {
-  box-sizing: border-box;
-}
-
 body {
-  background: var(--clr-light);
   color: var(--clr-light);
   font-family: var(--ff-primary);
   /* font-size: var(--fs-body); */
@@ -49,6 +42,37 @@ body {
   backdrop-filter: blur(10px);
 }
 
+/* general */
+i {
+  cursor: pointer;
+}
+i:hover {
+  color: #f8f8f8;
+}
+i:active {
+  transform: scale(0.9);
+}
+
+/* side menu */
+#sideMenu {
+  display: inline-block;
+  width: 12rem;
+  height: 100vh;
+  background: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* main */
+nav.navbar {
+  left: 13%;
+}
+.main__wrapper {
+  background-color: #303030;
+  width: 100%;
+}
+
 #userImg {
   height: 30px;
   width: 30px;
@@ -56,7 +80,16 @@ body {
   top: -1px;
 }
 
-#sideMenu,
+/* footer - player */
+#player {
+  height: 10vh;
+  background: rgb(24, 24, 24);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 #userMenu {
   background: #000;
 }
@@ -92,30 +125,17 @@ i {
   background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-#player {
-  height: 10vh;
-  background: rgb(24, 24, 24);
-  position: fixed;
-  bottom: 0;
-}
-
 p {
   font-size: 0.6rem;
-}
-#sideMenu {
-  flex: unset;
-  width: 9rem;
-  max-width: unset;
-}
-#main {
-  flex: unset;
-  width: calc(100vw - 180px);
 }
 
 @media (max-width: 768px) {
   #main > nav > div.dropdown.show > div {
     left: unset !important;
     right: 0 !important;
+  }
+  .dropdown-toggle::after {
+    display: none;
   }
 
   .card {
