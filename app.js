@@ -188,14 +188,30 @@ const { favAlbums } = player;
 const { trackList, durations, title } = favAlbums[0];
 trackList.forEach((track, idx) => {
   const html = `
-                <tr>
-                  <th scope="row">${track}</th>
-                  <td>${title[idx]}</td>
-                  <td class="d-flex justify-content-between">${durations[idx]}<button type="button" class="btn ml-auto btn-outline-light custom-outline-btn rounded-pill mr-3">Delete</button></td>
+                <tr class="row-${idx} row-body">
+                  <th scope="row" class="track__number">${track}</th>
+                  <td class="track__title">${title[idx]}</td>
+                  <td class="d-flex justify-content-between track__duration">${durations[idx]}<button type="button" class="btn ml-auto btn-outline-light custom-outline-btn rounded-pill mr-3">Delete</button></td>
                 </tr>
   `;
   tbody.innerHTML += html;
 });
+
+const tableBtns = document.querySelectorAll(
+  'table .custom-outline-btn.btn-outline-light.rounded-pill'
+);
+tableBtns.forEach((btn, idx) =>
+  btn.addEventListener('click', () => {
+    const rows = document.querySelectorAll(`.row-body`);
+    const rowToRemove = [...rows].find((row) =>
+      row.classList.contains(`row-${idx}`)
+    );
+    rowToRemove.classList.add('fade-out', 'fade-out-left');
+    setTimeout(() => {
+      rowToRemove.classList.add('d-none');
+    }, 500);
+  })
+);
 // player.favAlbums[0].trackList.forEach(track => {
 
 // })

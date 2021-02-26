@@ -193,6 +193,19 @@ p {
   border-color: #191919;
 }
 
+/* animations */
+.row-body {
+  transition: opacity all 0.3s;
+}
+
+.fade-out {
+  opacity: 0;
+}
+.fade-out-left {
+  transform: translateX(-10000px);
+}
+
+/* media per custom dropdown */
 @media (max-width: 992px) {
   .dropdown-menu {
     left: -600%;
